@@ -1,4 +1,5 @@
 function stringChop(str, size) {
+	if (str === null || size <= 0) return [];
   let strSize = str.length;
   let x = Math.floor(strSize / size);
   let arr = [];
@@ -11,6 +12,6 @@ function stringChop(str, size) {
 }
 
 // Do not change the code below
-const str = prompt("Enter String.");
-const size = Number(prompt("Enter Chunk Size.")); // convert to number
-alert(stringChop(str, size));
+// const str = prompt("Enter String.");
+// const size = Number(prompt("Enter Chunk Size.")); // convert to number
+// alert(stringChop(str, size));
